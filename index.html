@@ -231,6 +231,21 @@
             </div>
 
             <div class="mx-auto bg-gray-800 rounded-xl flex max-w-xs flex-col gap-y-4">
+              <dt class="text-3xl font-semibold leading-7 text-slate-100">San Valentín</dt>
+              <dd class="text-base leading-7 text-slate-100">14-02-2025</dd>
+              <dd class="order-first" style="font-size:100px">&#128152;</dd>
+              <dd class="text-3xl font-semibold tracking-tight text-slate-100 sm:text-5xl">
+                <div id="vale-timer">
+                  <span class="text-base text-slate-400">Faltan </span><span class="text-center text-5xl font-medium" id="vale-days"></span><span class="text-base text-slate-400"> días.</span>
+                  <div class="text-sm leading-7">
+                    <div id="vale-hours"></div><div id="warning-minutes"></div><div id="vale-seconds"></div>
+                  </div>
+                </div>
+              </dd>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2vfshZvISOKy2Je7wQBWOV?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="mx-auto bg-gray-800 rounded-xl flex max-w-xs flex-col gap-y-4">
               <dt class="text-3xl font-semibold leading-7 text-slate-100">Cumple Ady</dt>
               <dd class="text-base leading-7 text-slate-100">05-03-2025</dd>
               <dd class="order-first" style="font-size:100px">&#127874;</dd>
@@ -305,6 +320,7 @@
         const reyesDate = new Date('Jan 6, 2025 00:00:00').getTime();
         const amyDate = new Date('Jan 14, 2025 00:00:00').getTime();
         const warningDate = new Date('Feb 13, 2025 00:00:00').getTime();
+        const valeDate = new Date('Feb 14, 2025 00:00:00').getTime();
         const adyDate = new Date('Mar 5, 2025 00:00:00').getTime();
         const pulgaDate = new Date('Mar 22, 2025 00:00:00').getTime();
 
@@ -322,6 +338,7 @@
         countdown(reyesDate, 'reyes');
         countdown(amyDate, 'amy');
         countdown(warningDate, 'warning');
+        countdown(valeDate, 'vale');
         countdown(adyDate, 'ady');
         countdown(pulgaDate, 'pulga');
       }
