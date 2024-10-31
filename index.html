@@ -299,10 +299,6 @@
           document.getElementById(`${timerIdPrefix}-days`).innerHTML = days;
           document.getElementById(`${timerIdPrefix}-hours`, `${timerIdPrefix}-minutes`, `${timerIdPrefix}-seconds`).innerHTML = hours + "h " + minutes + "m " + seconds + "s";
 
-          if (difference < 0) {
-              clearInterval(interval);
-              document.getElementById('timer').innerHTML = "¡Feliz Día!";
-          }
       }
 
       function updateCountdowns() {
